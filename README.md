@@ -1,4 +1,8 @@
-- Image Docker pour WebAPP en port 3000 (Dockerfile)
-- Image Docker pour Moster en port 8080 (Dockerfile)
-- docker-compose pour les deux
-- ajout de promotheus & grafana sur le projet Moster
+# docker-moster
+ 
+# to build
+docker build . -f Dockerfile.moster -t moster
+
+
+# to run
+docker run -d -it --name mosters2 -p "8080:8080" moster
